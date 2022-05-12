@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>
+             Let's chat web app
+        </title>
+        <script src="kwitter_room.js"></script>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    </head>
+    <body style="text-align: center; background: lightblue;">
+        <button style="text-align: left; color: red;" onclick="logOut()">Log out</button>
+        <h1 style="color: black;";>
+            Kwitter
+        </h1>
+        <h3>
+            Enter Room name     
+        </h3>
+        <div>
+            <input placeholder="Enter room name here" class="form-control" id="room_name">
+            <button class="btn btn-primary" onclick="addRoom()">Add Room</button>
+            <br>
+            <br>
+            <h4 style="color:black;">#AddRoomName</h4>
+            <div id="output" ></div>
+        </div>
+    </body>
+    </html>
